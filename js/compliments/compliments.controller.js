@@ -5,9 +5,8 @@
   app.controller("complimentsController", ComplimentsController);
 
   function ComplimentsController(){
-    var vm = this;
-    var randomIndex = Math.floor(math.random()* data.length)
-    vm.data = data[randomIndex];
+    let randomIndex = Math.floor(Math.random() * data.length)
+    this.data = data[randomIndex];
   }
 
 }());
